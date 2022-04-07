@@ -1,0 +1,14 @@
+function bouncingBall($h, $bounce, $window) {
+  $h1=$h;
+  $count=-1;
+  if ($h<=0 or $bounce<=0 or $bounce>=1 or $window>=$h) {
+    $count= -1;
+  } else {
+    do {
+    $count +=2;
+    $h1=$h1*$bounce;
+  } while ($h1>$window);
+  }
+        
+  return $count;
+}
