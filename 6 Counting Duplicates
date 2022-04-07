@@ -1,0 +1,10 @@
+function duplicateCount($text) {
+  $count = 0;
+        $k = (array_count_values(str_split(strtolower($text))));
+            foreach ($k as $value) {
+                if ($value>1) {
+                    $count++;
+                }
+            }
+        return $count;
+}
