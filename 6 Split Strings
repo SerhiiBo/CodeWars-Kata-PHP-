@@ -1,0 +1,8 @@
+function solution($str) {
+  if (!empty($str)){
+    if (strlen($str)%2==0){$str2=str_split($str,2);} 
+    else {$str2=str_split($str."_", 2);}
+  } else $str2=array();
+  
+  return ($str2);
+}
