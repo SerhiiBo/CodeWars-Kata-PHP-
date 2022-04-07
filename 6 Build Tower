@@ -1,0 +1,8 @@
+function tower_builder(int $n): array {
+ $tower=array(); 
+        for ($i=1;$i<=$n;$i++){        
+            $tower[]= str_repeat(' ',$n-$i) .str_repeat('*',($i-1)*2+1) .str_repeat(' ',$n-$i);
+        
+        }    
+        return $tower;
+}
