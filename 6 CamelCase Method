@@ -1,0 +1,5 @@
+function camel_case(string $s): string {
+  $s=ltrim($s);
+  $s=ucwords($s, " ");
+  return str_replace (" ","",$s);
+}
